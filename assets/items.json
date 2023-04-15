@@ -1,0 +1,78 @@
+[
+    {
+        "id": 0,
+        "type": "Weapon-Throwable",
+        "damage": 1,
+        "itemName": "Empty Glass Bottle",
+        "description": "A bottle made of glass. It appears to be... empty"
+    },
+    {
+        "id": 1,
+        "type": "Weapon-Melee",
+        "damage": 5,
+        "itemName": "The Slayer Sword",
+        "description": "A powerful sword... Named by a really cool kid"
+    },
+    {
+        "id": 2,
+        "type": "Consumable",
+        "health": 5,
+        "itemName": "Health Potion",
+        "description": "A bottle made of glass. It appears to be full of 'medicine'"
+    },
+    {
+        "id": 3,
+        "type": "Weapon-Range",
+        "damage": 10,
+        "itemName": "Ye Old Flamethrower",
+        "description": "I wonder how this got here, could be useful!"
+    },
+    {
+        "id": 4,
+        "type": "Consumable",
+        "health": -5,
+        "itemName": "Bottle O' Poison",
+        "description": "You probably don't want to drink this"
+    },
+    {
+        "id": 5, 
+        "type": "Armor-Upper",
+        "resistance": 3,
+        "itemName": "Upper Body Armor",
+        "description": "Keep your upper body safe!"
+    },
+    {
+        "id": 6,
+        "type": "Armor-Lower",
+        "resistance": 3,
+        "itemName": "Lower Body Armor",
+        "description": "Gotta keep everything safe!!"
+    },
+    {
+        "id": 7,
+        "type": "Weapon-Melee",
+        "damage": 3,
+        "itemName": "Rusty Sword",
+        "description": "Not too sharp, but you haven't had a tetinus shot in a while"
+    },
+    {
+        "id": 8,
+        "type": "Weapon-Throwable",
+        "damage": 6,
+        "itemName": "Fat Rat Nuts",
+        "description": "LOOK AT THE SIZE OF THOSE THINGS"
+    },
+    {
+        "id": 9,
+        "type": "Legendary-Weapon-Melee",
+        "damage": 8,
+        "itemName": "The Belt",
+        "description": "A black and silver with studs and spikes leather, doubles as a fashionable clothing item"
+    },
+    {
+        "id": 10,
+        "type": "Legendary-Weapon-Melee",
+        "itemName": "These Hands",
+        "description": "'I brought you into this world and I can take you out!"
+    }
+]

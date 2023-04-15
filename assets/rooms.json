@@ -1,0 +1,138 @@
+[
+    {
+        "id": 0,
+        "roomName": "Main Entrance",
+        "items": [ 0 ],
+        "directions": [
+            {
+                "direction": "Straight Ahead Into The Darkness",
+                "roomId": 1
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 1,
+        "roomName": "Long, Creepy Hallway",
+        "items": [],
+        "directions": [
+            {
+                "direction": "To The Main Entrance",
+                "roomId": 0
+            },
+            {
+                "direction": "The Left Door Behind You",
+                "roomId": 2
+            },
+            {
+                "direction": "The Door On The Far Left Wall",
+                "roomId": 3
+            },
+            {
+                "direction": "The Door straight ahead of you",
+                "roomId": 4
+            },
+            {
+                "direction": "The Door On The Far Right Wall",
+                "roomId": 5
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 2,
+        "roomName": "The Dusty Study",
+        "items": [ 1 ],
+        "directions": [
+            {
+                "direction": "To The Long, Creepy Hallway",
+                "roomId": 1
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 3,
+        "roomName": "Decrepid Bedroom",
+        "items": [ 2 ],
+        "directions": [
+            {
+                "direction": "To The Long, Creepy Hallway",
+                "roomId": 1
+            },
+            {
+                "direction": "The Door On The Right Wall",
+                "roomId": 6
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 4,
+        "roomName": "Old Trophy Room",
+        "items": [ 3 ],
+        "directions": [
+            {
+                "direction": "To The Long, Creepy Hallway",
+                "roomId": 1
+            },
+            {
+                "direction": "Down The Dark, Creeky Stairs...",
+                "roomId": 7
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 5,
+        "roomName": "Suprisingly Welcome Guest Room",
+        "items": [ 4 ],
+        "directions": [
+            {
+                "direction": "To The Long, Creepy Hallway",
+                "roomId": 1
+            },
+            {
+                "direction": "Up The Dimly Lit Steps...",
+                "roomId":  8
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 6,
+        "roomName": "Da Bafroom",
+        "items": [ 6 ],
+        "directions":[
+            {
+                "direction": "To The Decrepid Bedroom",
+                "roomId": 3
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 7,
+        "roomName": "Spooky Basement",
+        "items": [],
+        "directions": [
+            {
+                "direction": "To The Old Trophy Room", 
+                "roomId": 4
+            }
+        ],
+        "discovered": false
+    },
+    {
+        "id": 8,
+        "roomName": "Safe Attic",
+        "items": [ 5 ],
+        "directions": [
+            {
+                "direction": "To the Surprisingly Welcoming Guest Room",
+                "roomId": 5
+            }
+        ],
+        "discovered": false
+    }
+]

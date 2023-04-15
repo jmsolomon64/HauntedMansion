@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "playerName": "Ryan Kelly",
+        "health": 15,
+        "speed": 5,
+        "consumables": [],
+        "weapons": null,
+        "armor": []
+    },
+    {
+        "id": 1,
+        "playerName": "Jacob Solomon",
+        "health": 18,
+        "speed": 6,
+        "consumables": [],
+        "weapons": null,
+        "armor": []
+    },
+    {
+        "id": 2,
+        "playerName": "Jake Ruschemeier",
+        "health": 12,
+        "speed": 5,
+        "consumables": [],
+        "weapons": null,
+        "armor": []
+    },
+    {
+        "id": 3,
+        "playerName": "Veronica Moore",
+        "health": 14,
+        "speed": 8,
+        "consumables": [],
+        "weapons": null,
+        "armor": []
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 0,
+        "enemyName": "Little Spider",
+        "health": 5,
+        "strength": 2,
+        "speed": 5,
+        "effects": [],
+        "weapons": [],
+        "description": "It's just a lil guy"
+    },
+    {
+        "id": 1,
+        "enemyName": "Skeleton Soldier",
+        "health": 5,
+        "strength": 2,
+        "speed": 4,
+        "effects": [],
+        "weapons": [ 7 ],
+        "description": "A recruiter of the Skeleton Army (Ready to recruit you)"
+    },
+    {
+        "id": 2, 
+        "enemyName": "Spooky Bat",
+        "health": 2,
+        "strength": 1,
+        "speed": 8,
+        "effects": [],
+        "weapons": [],
+        "description": "You're too slow"
+    },
+    {
+        "id": 3, 
+        "enemyName": "Big Spider",
+        "health": 10,
+        "strength": 4,
+        "speed": 3,
+        "effects": [],
+        "weapons": [],
+        "description": "That's a big spider"
+    },
+    {
+        "id" :4,
+        "enemyName": "Halo 3 Rat",
+        "health": 4,
+        "strength" : 2,
+        "speed": 4,
+        "effects": [ "nostalgia" ],
+        "weapons": [ 8 ],
+        "description": "oh shit, a rat"
+    },
+    {
+        "id": 5,
+        "enemyName": "Father Figure",
+        "health": 15,
+        "strength": 10,
+        "speed": 4,
+        "effects": [ "trauma" ],
+        "weapons": [ 9 ],
+        "description": "'you're just like your mother'"
+    },
+    {
+        "id": 6,
+        "enemyName": "Mother Figure",
+        "health": 10,
+        "strength": 6,
+        "speed": 8,
+        "effects": [ "gaslighting" ],
+        "weapons": ["these hands"],
+        "description": "'I don't remember it that way'"
+    }
+]
