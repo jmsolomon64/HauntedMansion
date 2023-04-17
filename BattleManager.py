@@ -14,6 +14,7 @@ def load_enemy(enemy_id):
     '''Grabs enemy from id'''
     return enemies[enemy_id]
 
+
 #Enemy is Id here so we pull a 'fresh' enemy into combat
 def determine_order(player, enemy_id):
     '''Appends players to combatents array in proper order'''
@@ -45,7 +46,7 @@ def calc_attack_points(attacker):
     speed = attacker['speed']/4 
     strength = attacker['strength']/2
     if attacker['weapon'] != None: #checks for weapon
-        damage = InventoryManagement.all_items[attacker['weapon']['damage']]
+        damage = InventoryManagement.all_items[attacker['weapon']]['damage']
 
     return (speed + strength + damage)/2
 
