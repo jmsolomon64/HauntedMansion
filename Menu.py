@@ -78,7 +78,7 @@ def battle_menu(player, enemy):
                                 BattleManager.reg_attack(enemy, player)
                                 break
                             elif choice == '2':
-                                print('look at that guy') # need an enemy 
+                                in_out.inspect_enemy(enemy) # need an enemy 
                             elif choice == '3':
                                 inventory_menu(player)
                             elif choice == '4':

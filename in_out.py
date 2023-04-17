@@ -100,4 +100,18 @@ def int_or_quit():
             invalid_choice_msg()
 
 
+def inspect_enemy(enemy):
+    details = f'''
+    NAME: {enemy['name']}
+    -----------------------
+    HP: {enemy['health']}
+    Stngth: {enemy['strength']}
+    Speed: {enemy['speed']}
+    -----------------------
+        {enemy['description']}
+    '''
+    print(details)
+    print()
+
+
 

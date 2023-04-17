@@ -22,6 +22,7 @@ def view_player_inventory(item_ids):
 def use_consumable(item_id, player):
     '''Heal or posion yourself'''
     in_out.consumable_message(f'{player["name"]} used {all_items[item_id]["itemName"]}')
+    player['inventory']
     player['health'] += all_items[item_id]['health']
     if player['health'] <= 0:
         return False
@@ -48,12 +49,12 @@ def equip_armor(item_id, player):
 
 def equip_weapon(item_id, player):
     '''Equip/Unequip players weapon'''
-    if item_id == player['weapons']:
+    if item_id == player['weapon']:
         in_out.weapon_message(f'{player["name"]} unequipped {all_items[item_id]["itemName"]}')
-        player['weapons'] = None
+        player['weapon'] = None
     else:
         in_out.weapon_message(f'{player["name"]} equipped {all_items[item_id]["itemName"]}')
-        player['weapons'] = item_id
+        player['weapon'] = item_id
 
 
 def inspect_item(item_id, player):
@@ -84,13 +85,13 @@ def enemy_drop(enemy, player):
     if item_count > 1:
         drop_index = random.randint(0, item_count - 1)
         drop_item = enemy['inventory'][drop_index]
-        player['inventory'].append(drop_item['id'])
-        print(f'{player["name"]} picked up {drop_item["itemName"]} from {enemy["name"]}')
+        player['inventory'].append(drop_item)
+        in_out.found_direction(f'{player["name"]} picked something up from{enemy["name"]}')
 
     elif item_count == 1:
         drop_item = enemy['inventory'][0]
         player['inventory'].append(drop_item)
-        print(f'{player["name"]} picked up something from {enemy["name"]}')
+        in_out.found_direction(f'{player["name"]} picked up something from {enemy["name"]}')
 
 def find_item(room, player):
     '''Handles Item discovery for room,
@@ -98,4 +99,4 @@ def find_item(room, player):
     if len(room['items']) > 0:
         for item in room['items']:
             player['inventory'].append(item)
-            print(f'{player["name"]} found {all_items[item]}')
+            in_out.found_direction(f'{player["name"]} found {all_items[item]["itemName"]}')
