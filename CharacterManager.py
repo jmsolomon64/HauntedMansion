@@ -1,6 +1,6 @@
 import json #allows for parsing of JSON files
 import random #pseudo random number generator
-import Input
+import in_out
 
 def read_players():
     '''Loads players from player.json'''
@@ -18,12 +18,15 @@ def create_new_player():
     current_players = read_players()
     new_player = {} #create new dic
     new_player['id'] = current_players[-1]['id'] + 1 #generate new ID
-    new_player['playerName'] = input('What is your name?')
+    in_out.print_menu('What is your name?')
+    new_player['name'] = input()
     new_player['health'] = random.randint(10, 20)
     new_player['speed'] = random.randint(3, 12)
-    new_player['consumables'] = []
-    new_player['weapons'] = None #python's version of null
-    new_player['armor'] = []
+    new_player['strength'] = random.randint(5, 10)
+    new_player['inventory'] = []
+    new_player['weapon'] = None #python's version of null
+    new_player['upperBody'] = None
+    new_player['lowerBody'] = None
 
     current_players.append(new_player)
     write_players(current_players)
@@ -34,15 +37,15 @@ def load_character():
     # dic of players with id as key and name as value
     players = {}
     for player in player_data:
-        players[player['id']] = player['playerName']
+        players[player['id']] = player['name']
 
     while(True):
-        print("Please select a character:")
+        in_out.print_menu('Please select a character:')
         for player in players:
             print(player, players[player])
 
-        player_id = Input.input_int('Please enter a valid id#')
+        player_id = in_out.input_int()
         if player_id in players:
             return player_data[player_id]
         else:
-            print('Please enter a valid id#')
+            in_out.invalid_choice_msg()

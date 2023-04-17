@@ -1,4 +1,5 @@
 import Menu
+import in_out
 import MapManager
 
 print('Haunted Mansion')
@@ -15,7 +16,17 @@ while(player):
     room_name = current_room['roomName']
     print(f'you are in the {room_name}')
 
-    #enemy check goes here
-    current_room = Menu.explore_menu(current_room)
+    #Enemy encounter check
+    enemy = MapManager.check_for_enemies(current_room['id'])
+
+    if enemy != False:
+        battle_status = Menu.battle_menu(player, enemy)
+        if battle_status == False:
+            in_out.death_msg()
+            break
+    
+
+    current_room = Menu.explore_menu(current_room, player)
     if current_room == False: #check if user quit
         break
+

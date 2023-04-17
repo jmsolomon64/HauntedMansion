@@ -1,38 +1,72 @@
 [
     {
         "id": 0,
-        "playerName": "Ryan Kelly",
+        "name": "Ryan Kelly",
         "health": 15,
         "speed": 5,
-        "consumables": [],
-        "weapons": null,
-        "armor": []
+        "strength": 8,
+        "inventory": [],
+        "weapon": null,
+        "upperBody": null,
+        "lowerBody": null
     },
     {
         "id": 1,
-        "playerName": "Jacob Solomon",
+        "name": "Jacob Solomon",
         "health": 18,
         "speed": 6,
-        "consumables": [],
-        "weapons": null,
-        "armor": []
+        "strength": 8,
+        "inventory": [],
+        "weapon": null,
+        "upperBody": null,
+        "lowerBody": null
     },
     {
         "id": 2,
-        "playerName": "Jake Ruschemeier",
+        "name": "Jake Ruschemeier",
         "health": 12,
         "speed": 5,
-        "consumables": [],
-        "weapons": null,
-        "armor": []
+        "strength": 8,
+        "inventory": [
+            8,
+            6,
+            5
+        ],
+        "weapon": null,
+        "upperBody": null,
+        "lowerBody": null
     },
     {
         "id": 3,
-        "playerName": "Veronica Moore",
+        "name": "Veronica Moore",
         "health": 14,
         "speed": 8,
-        "consumables": [],
-        "weapons": null,
-        "armor": []
+        "strength": 8,
+        "inventory": [],
+        "weapon": null,
+        "upperBody": null,
+        "lowerBody": null
+    },
+    {
+        "id": 4,
+        "name": "jake",
+        "health": 11,
+        "speed": 8,
+        "strength": 8,
+        "inventory": [],
+        "weapon": null,
+        "upperBody": null,
+        "lowerBody": null
+    },
+    {
+        "id": 5,
+        "name": "John Arbuckle",
+        "health": 18,
+        "speed": 5,
+        "strength": 7,
+        "inventory": [],
+        "weapon": null,
+        "upperBody": null,
+        "lowerBody": null
     }
 ]

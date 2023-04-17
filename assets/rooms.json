@@ -3,6 +3,7 @@
         "id": 0,
         "roomName": "Main Entrance",
         "items": [ 0 ],
+        "enemies": [],
         "directions": [
             {
                 "direction": "Straight Ahead Into The Darkness",
@@ -15,6 +16,7 @@
         "id": 1,
         "roomName": "Long, Creepy Hallway",
         "items": [],
+        "enemies": [ 0, 2 ],
         "directions": [
             {
                 "direction": "To The Main Entrance",
@@ -43,6 +45,7 @@
         "id": 2,
         "roomName": "The Dusty Study",
         "items": [ 1 ],
+        "enemies": [ 2 ],
         "directions": [
             {
                 "direction": "To The Long, Creepy Hallway",
@@ -55,6 +58,7 @@
         "id": 3,
         "roomName": "Decrepid Bedroom",
         "items": [ 2 ],
+        "enemies": [ 0 ],
         "directions": [
             {
                 "direction": "To The Long, Creepy Hallway",
@@ -71,6 +75,7 @@
         "id": 4,
         "roomName": "Old Trophy Room",
         "items": [ 3 ],
+        "enemies": [ 1 ],
         "directions": [
             {
                 "direction": "To The Long, Creepy Hallway",
@@ -87,6 +92,7 @@
         "id": 5,
         "roomName": "Suprisingly Welcome Guest Room",
         "items": [ 4 ],
+        "enemies": [],
         "directions": [
             {
                 "direction": "To The Long, Creepy Hallway",
@@ -103,6 +109,7 @@
         "id": 6,
         "roomName": "Da Bafroom",
         "items": [ 6 ],
+        "enemies": [ 0, 1 ],
         "directions":[
             {
                 "direction": "To The Decrepid Bedroom",
@@ -115,6 +122,7 @@
         "id": 7,
         "roomName": "Spooky Basement",
         "items": [],
+        "enemies": [ 1, 5 ],
         "directions": [
             {
                 "direction": "To The Old Trophy Room", 
@@ -127,6 +135,7 @@
         "id": 8,
         "roomName": "Safe Attic",
         "items": [ 5 ],
+        "enemies": [ 6 ],
         "directions": [
             {
                 "direction": "To the Surprisingly Welcoming Guest Room",
