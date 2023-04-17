@@ -21,19 +21,23 @@ def change_discovery(room_id, player):
 
 def select_direction(room):
     in_out.print_menu('Where do you want to go?\nOr x to go back')
+    directions = []
     for direction in room['directions']:
         if rooms[direction['roomId']]['discovered'] == False:
             in_out.unknown_direction(f"{direction['roomId']}) {direction['direction']}")
         else:
             in_out.known_direction(f"{direction['roomId']}) {rooms[direction['roomId']]['roomName']}")
+        directions.append(direction['roomId'])
 
-    room_choice = in_out.int_or_quit()
-    if room_choice in room['directions']:
-        return rooms[room_choice]
-    elif room_choice == False:
-        print()
-    else:
-        in_out.invalid_choice_msg()
+    while(True):
+        room_choice = in_out.int_or_quit()
+    
+        if room_choice in directions:
+            return rooms[room_choice]
+        elif room_choice == False:
+            break
+        else:
+            in_out.invalid_choice_msg()
 
 
 
